@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.francisco.compose.animation.AnimatedCircle
+import com.francisco.compose.navigation.NavigationRoot
 import com.francisco.compose.ui.theme.ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    AnimatedCircle(
+                    NavigationRoot(
                         modifier = Modifier
                             .fillMaxSize()
                             .padding(innerPadding)
